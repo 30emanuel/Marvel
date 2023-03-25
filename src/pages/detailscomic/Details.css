@@ -1,0 +1,79 @@
+article {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.comic-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.comic-image {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 300px;
+}
+
+.comic-image img {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+}
+
+.comic-description {
+  flex: 1;
+}
+
+.comic-description h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.comic-description h3 {
+  font-size: 24px;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.comic-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.comic-description button {
+  margin-top: 20px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .comic-container {
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .comic-image {
+    margin: 0;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .comic-description {
+    margin-top: 20px;
+  }
+}

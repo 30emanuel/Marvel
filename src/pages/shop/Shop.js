@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import {getComics} from "../../api"
 import Comic from "./comic/Comic";
 import "./ShopCss.css"
+import { FiArrowRight} from "react-icons/fi";
+import { FiArrowLeft} from "react-icons/fi";
 
 function Shop() {
   const [comics, setComics] = useState([])
@@ -42,9 +44,9 @@ function Shop() {
   
   return (
     <main className="shop">
-      <nav className="constrols">
-        <button onClick={handlePrevPage}>Anterior</button>
-        <button onClick={handleNextPage}>Próxima</button>
+      <nav className="controls">
+        <button onClick={handlePrevPage}><FiArrowLeft className="icons"/></button>
+        <button onClick={handleNextPage}><FiArrowRight className="icons"/></button>
         <span>{`Página ${currentPage} de ${totalPages}`}</span>
       </nav>
       {loading ? (

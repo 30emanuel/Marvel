@@ -5,7 +5,7 @@ import "./Headercss.css"
 function Header() {
   return (
     <header>
-      <img src="imgs/logo.png"  alt="Logo" />
+      <a href="/"><img src="imgs/logo.png"  alt="Logo" /></a>
       <button>Carrinho</button>
     </header>
   )
