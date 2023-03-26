@@ -14,8 +14,10 @@ function Details(){
   const fetchComic = async (id) => {
     try {
       const data = await getComic(id)
-      const result = await data.data.results[0]
-      console.log(result)
+      let result = await data.data.results[0]
+      if (result.prices[0].price === 0) {
+        result.prices[0].price = 10 
+      }
       setComic(result)
       setLoading(false)
     } catch (error) {

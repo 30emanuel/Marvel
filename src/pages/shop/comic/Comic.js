@@ -6,7 +6,10 @@ import { CartContext } from '../../../cartContext';
 
 
 function Comic(props){
-    const {comic} = props
+    let {comic} = props
+    if (comic.prices[0].price === 0) {
+        comic.prices[0].price = 10 
+    }
     const {addItem} = useContext(CartContext)
     return(
         <div className="comic">
