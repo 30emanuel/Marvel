@@ -17,6 +17,8 @@ button {
   background-color: #dc3545;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {

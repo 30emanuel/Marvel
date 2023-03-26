@@ -52,12 +52,8 @@ article {
 .comic-description button {
   margin-top: 20px;
   border: none;
-  color: white;
-  font-size: 20px;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 @media (max-width: 768px) {
